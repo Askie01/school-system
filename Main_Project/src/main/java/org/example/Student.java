@@ -40,4 +40,19 @@ public class Student {
     public int getID() {
         return ID;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Student student = (Student) o;
+
+        return ID == student.ID;
+    }
+
+    @Override
+    public int hashCode() {
+        return ID;
+    }
 }
