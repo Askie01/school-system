@@ -40,4 +40,14 @@ public class Student {
     public int getID() {
         return ID;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                ", ID=" + ID +
+                '}';
+    }
 }
